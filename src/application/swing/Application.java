@@ -19,14 +19,14 @@ public class Application extends JFrame {
     private ExchangeDisplay exchangeDisplay;
     private JButton calculateButton;
 
-    public static void main(String[] args) {
-        new Application().setVisible(true);
-    }
-
     public Application() {
         commands = new HashMap<>();
         this.deployComponents();
         this.createCommands();
+    }
+
+    public static void main(String[] args) {
+        new Application().setVisible(true);
     }
 
     private void deployComponents() {
@@ -71,11 +71,11 @@ public class Application extends JFrame {
         return button;
     }
 
-    public void enableCalculate(){
+    public void enableCalculate() {
         this.calculateButton.setEnabled(true);
     }
 
-    public void disableCalculate(){
+    public void disableCalculate() {
         this.calculateButton.setEnabled(false);
     }
 

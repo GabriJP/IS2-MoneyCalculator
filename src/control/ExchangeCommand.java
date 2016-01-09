@@ -3,9 +3,9 @@ package control;
 import application.swing.Application;
 import model.ExchangeRate;
 import model.Money;
+import view.persistance.ExchangeRateReader;
 import view.ui.ExchangeDialog;
 import view.ui.ExchangeDisplay;
-import view.persistance.ExchangeRateReader;
 
 public class ExchangeCommand implements Command {
     private final ExchangeDialog exchangeDialog;
