@@ -16,6 +16,7 @@ public class ExchangePanel extends JPanel implements ExchangeDialog, ExchangeDis
     private final JTextField input;
 
     public ExchangePanel() {
+//        CurrencySetLoader loader = new FileCurrencySetLoader("data/currencies.csv");
         CurrencySetLoader loader = new SQLiteCurrencySetLoader();
         Vector<Currency> currencies = loader.load().toArray();
         this.from = new JComboBox<>(currencies);
